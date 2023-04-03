@@ -1,0 +1,595 @@
+html body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "container2";
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  min-height: 75px;
+  max-width: 100vw;
+}
+
+.container__overheader {
+  width: 100%;
+  background-color:rgba(232, 232, 232, 0.485);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.pais {
+
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+
+}
+
+.texto-descuento {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  visibility: visible;
+}
+
+.ahora {
+  text-decoration: underline;
+  font-size: x-small;
+}
+
+.bandera {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 5px;
+  padding-right: 15px;
+}
+
+.ayuda {
+  margin-right: 20px;
+}
+
+.descuento {
+  font-weight: bold;
+}
+
+.main1 {
+  border-color: rgba(0, 0, 0, 0.151);
+  border-style: solid none solid none;
+  border-width: thin;
+  display: flex;
+  flex-direction: row;
+  max-height: 45px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}
+
+.logo {
+  margin: 10px;
+  display: flex;
+  width: 20px;
+  margin-left: 20px;
+}
+
+.perfil img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.perfil:hover {
+  transform: scale(1.3);
+}
+
+.carrito img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.carrito:hover {
+  transform: scale(1.3);
+}
+
+.like img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.like:hover {
+  transform: scale(1.3);
+}
+
+.lupa img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.lupa:hover {
+  transform: scale(1.3);
+}
+
+
+.barra {
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.grupo {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  margin-right: 10px;
+  align-content: end;
+}
+
+.info {
+  padding: 11px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.192);
+}
+
+.cerrar a {
+  display: none;
+}
+
+.menu {
+  justify-content: space-between;
+  font-weight: 400;
+ 
+}
+
+.menu li {
+  list-style: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.menu li:hover{
+  background-color: #51a3a3a1;
+  color: white;
+  border-radius: 3px;
+}
+
+.img-menu {
+  width: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+.mujer{
+  color: #51a3a3a1;
+  font-weight: 500;
+}
+
+.detalle-menu {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.menu_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  z-index: 1;
+  min-height: 50vh;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu_nav_hidden {
+  margin-top: 10px;
+}
+
+.menu_nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu_nav li{
+  transition: 0.3s ease-in-out;
+}
+
+.menu_nav li:hover{
+  background-color: #51a3a3a1;
+  color: white;
+  border-radius: 3px;
+}
+
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.menu_hidden {
+  display: none;
+}
+
+/* todo lo anterior es código de Ana y Nuria (del HOME) */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 20px;
+  grid-gap: 20px;
+
+}
+
+.container2 {
+
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  align-items: center;
+  margin-left: 20px;
+  flex-wrap: wrap;
+
+}
+
+.container_zapatilla {
+
+  width: 100%;
+
+}
+
+.textozapatilla {
+  padding: 5px;
+  color: rgb(109, 109, 97);
+
+}
+
+.precio {
+  float: right;
+
+}
+
+.hightop {
+  font-size: x-small;
+  margin-top: auto;
+}
+
+.imgzapatilla img {
+
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.imgzapatilla {
+  width: 100%;
+}
+
+
+.filtroTalla {
+  display: flex;
+  width: 58%;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 20px 10px 20px;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 5px;
+  color:rgb(232, 232, 232);
+  margin-left: 19%;
+  justify-content: space-between;
+}
+
+.filtroTalla a {
+  color: black;
+  text-decoration: none;
+
+}
+
+.mas {
+  font-weight: 800;
+  padding-right: 8px;
+}
+
+.irCarrito {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(232, 232, 232, 0.801);
+  margin: 10px 20px 20px 20px;
+  border-radius: 5px;
+  color: #b3aba2;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.irCarrito a {
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.irCarrito img {
+
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 5px;
+
+}
+
+.contenedor_detalle {
+
+  display: flex;
+  width: 95%;
+  padding: 0px 0px 0px 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+  flex-wrap: wrap;
+
+}
+
+.detalle-lista {
+  text-decoration: solid;
+}
+
+.estilo {
+
+  text-align: center;
+  padding: 20px;
+  color: rgb(95, 107, 107);
+}
+
+
+.detalle {
+  width: 50%;
+  text-align: center;
+  margin-top: -20px;
+  text-align: left;
+  justify-content: center;
+  padding: 30px;
+  ;
+  color: rgb(49, 53, 53);
+  background-color: rgba(232, 232, 232, 0.485);
+  border-radius: 1%;
+
+}
+
+
+
+
+/* MEDIA */
+
+
+
+
+@media (max-width: 700px) {
+
+  .container__mainheader {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .main1 {
+    display: grid;
+    grid-template-areas:
+      "menu logo barra cerrar";
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+  }
+
+  .logo {
+    grid-area: logo;
+    margin-left: 60px;
+    font-size: x-small;
+    padding-right: 70px;
+  
+  }
+
+  .img-menu {
+    display: block;
+    display: menu;
+    grid-area: menu;
+    z-index: 2;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .barra {
+
+    padding: 1px;
+    grid-area: barra;
+    justify-content: start;
+  }
+
+  .lupa img {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+
+  }
+
+  .carrito img {
+   margin-left: 70px;
+   padding-left: 30px;
+  }
+
+  .grupo {
+    margin: 0;
+    align-items: center;
+  }
+
+  .icono_burguer {
+    display: flex;
+    display: menu;
+    grid-area: menu;
+    z-index: 2;
+    position: absolute;
+    top: 55px;
+    margin-left: 10px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .perfil {
+    display: none;
+  }
+
+  .like {
+    display: none;
+  }
+
+  .buscar {
+    display: none;
+  }
+
+  .info {
+    
+    border-style: none;
+    justify-content:start;
+    padding: 0;
+    margin-right: 0px;
+  }
+
+  .cerrar a {
+    grid-area: cerrar;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+    height: 30px;
+    padding-left: -10px;
+
+  }
+
+  .texto-descuento {
+    visibility: hidden;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: -20px;
+  }
+
+  .textozapatilla {
+    padding: 10px;
+    margin-left: -10px;
+  }
+
+  .hightop {
+    margin-left: -80px;
+  }
+
+  .container2 {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .filtroTalla {
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .contenedor_detalle {
+    margin-top: -40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .detalle-lista {
+    text-align: left;
+  }
+
+  .estilo {
+
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: rgb(95, 107, 107);
+
+  }
+
+  .detalle {
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(49, 53, 53);
+    background-color: rgb(187, 187, 187);
+
+  }
+
+}
